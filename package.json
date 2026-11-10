@@ -1,0 +1,12 @@
+{
+  "name": "mikro-orm-tsc-oom-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --max-old-space-size=2048 node_modules/typescript/bin/tsc --noEmit -p tsconfig.json --extendedDiagnostics"
+  },
+  "devDependencies": {
+    "@mikro-orm/core": "7.2.8",
+    "typescript": "6.0.3"
+  }
+}
